@@ -15,9 +15,8 @@ public class Main {
         };
         // Compte le nombre d'adresse du tableau
         int totalEmails = emails.length;
-
         int gmailCount = 0;
-        // Recherche des adresses gmail
+        // "Boucle"   Recherche des adresses gmail
         for (String email : emails) {
             if (email.endsWith("@gmail.com") || email.endsWith("@gmail.fr")) {
 
