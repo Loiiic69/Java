@@ -13,34 +13,27 @@ public class Ex7 {
         this.articles = articles;
         this.quantites = quantites;
 
+
     }
 
     public int getNumero() {
         return numero;
     }
-
     public String getDate() {
         return date;
     }
-
     public Client getClient() {
         return client;
     }
-
     public String[] getArticles() {
         return articles;
     }
-
     public int[] getQuantites() {
         return quantites;
     }
 
-    public String getAdresse() {
-        return adresse;
-    }
-
     public static void main(String[] args) {
-        String[] articles = {"TN Full black", "Casquette Nike", "Sacoche Nike"};
+        String[] articles = {"  TN Full black", "  Casquette Nike", "  Sacoche Nike"};
         int[] quantites = {2, 1, 3};
         Client client = new Client("FLORIMONT", "Loic", "15 Grande Rue", 97200, "Fort De France");
         Ex7 commande = new Ex7(1, "2023-06-12", client, articles, quantites);
@@ -48,9 +41,9 @@ public class Ex7 {
         System.out.println("------------------------------------------------------------");
         System.out.println(" ");
         System.out.println("Numero de commande : " + commande.getNumero());
-        System.out.println("Date de commande : " + commande.getDate());
-        System.out.println("Client : " + commande.getClient().getNom() + " " + commande.getClient().getPrenom());
-        System.out.println("Adresse de Livraison : " + commande.getClient().getAdresse() + " " + commande.getClient().getCodePostal() + " " + commande.getClient().getVille() );
+        System.out.println("    Date de commande : " + commande.getDate());
+        System.out.println("    Client : " + commande.getClient().getNom() + " " + commande.getClient().getPrenom());
+        System.out.println("    Adresse de Livraison : " + commande.getClient().getAdresse() + " " + commande.getClient().getCodePostal() + " " + commande.getClient().getVille() );
         System.out.println(" ");
         System.out.println("------------------------------------------------------------");
         System.out.println(" ");
@@ -58,13 +51,16 @@ public class Ex7 {
         for (int i = 0; i < commande.getArticles().length; i++) {
             System.out.println(commande.getArticles()[i] + " - Quantite : " + commande.getQuantites()[i]);
         }
+        System.out.println(" ");
+        System.out.println("------------------------------------------------------------");
+        System.out.println(" ");
     }
 
 }
 
 
 class Client {
-    private String nom;
+        private String nom;
     private String prenom;
     private String adresse;
     private int codePostal;
