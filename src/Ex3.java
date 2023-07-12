@@ -1,11 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class justeprix {
+public class Ex3 {
     public static void main(String[] args) {
-        // Génération d'un nombre aléatoire entre 1 et 10000
+        // Génération d'un nombre aléatoire entre 1 et 100
         Random random = new Random();
-        int justePrix = random.nextInt(10000) + 1;
+        int justePrix = random.nextInt(100) + 1;
 
         // Initialisation des variables
         int tentative = 0;

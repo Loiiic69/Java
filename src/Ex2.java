@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class deux {
+public class Ex2 {
     // Méthode principale
     public static void main(String[] args) {
         // Appel de la méthode findCombination() pour rechercher la combinaison
